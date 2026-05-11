@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --cyber-cyan: #00f3ff;
+  --cyber-purple: #9d00ff;
+  --cyber-gold: #ffd700;
+  --cyber-green: #00ff66;
+  --cyber-red: #ff0033;
+}
+
+body {
+  background-color: #050505 !important;
+  color: #ffffff !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply antialiased selection:bg-cyber-cyan selection:text-black;
+  }
+}
+
+@layer components {
+  .cyber-grid-bg {
+    background-image: 
+      linear-gradient(to right, rgba(0, 243, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 243, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .text-glow-cyan {
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+  }
+}
+
+@keyframes reverse-spin {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-reverse-spin {
+  animation: reverse-spin 10s linear infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
