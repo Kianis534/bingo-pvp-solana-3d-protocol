@@ -21,9 +21,9 @@ export const FinalCTASection = () => {
                 It is a competitive Web3 gaming arena.
              </p>
              <div className="flex flex-wrap justify-center gap-6">
-                <Button size="lg" className="h-16 px-12 text-lg">Explore Game Details</Button>
-                <Button size="lg" variant="secondary" className="h-16 px-12 text-lg">View Smart Contract</Button>
-                <Button size="lg" variant="gold" className="h-16 px-12 text-lg">View Token Economy</Button>
+                <Button size="lg" className="w-72 h-16 px-12 text-lg">Explore Game Details</Button>
+                <Button size="lg" variant="secondary" className="w-72 h-16 px-12 text-lg">View Smart Contract</Button>
+                <Button size="lg" variant="gold" className="w-72 h-16 px-12 text-lg">View Token Economy</Button>
              </div>
           </motion.div>
        </div>

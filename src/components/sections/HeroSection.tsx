@@ -55,12 +55,12 @@ export const HeroSection = () => {
 
           <div className="mt-8 flex flex-wrap justify-center gap-6">
             <Link href="/overview">
-              <Button variant="primary" size="lg" className="px-10 py-8 text-lg">
+              <Button variant="primary" size="lg" className="w-64 px-10 py-8 text-lg">
                 Enter Game
               </Button>
             </Link>
             <Link href="/contract">
-              <Button variant="secondary" size="lg" className="px-10 py-8 text-lg">
+              <Button variant="secondary" size="lg" className="w-64 px-10 py-8 text-lg">
                 Smart Contract
               </Button>
             </Link>
