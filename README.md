@@ -129,12 +129,6 @@ The game's economic heart is a Solana program built with **Anchor v0.30.0**.
 
 ---
 
-## 📄 License
-
-Built as part of the **Bingo PVP** ecosystem development. All rights reserved.
-
----
-
 ## 🌐 Deploying
 
 This project is optimized for **Vercel**. Connect your repository to Vercel and it will automatically deploy using the Next.js build settings.
