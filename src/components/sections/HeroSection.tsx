@@ -43,24 +43,24 @@ export const HeroSection = () => {
           </motion.span>
           
           <div className="relative">
-            <h1 className="bg-gradient-to-b from-white via-white to-white/20 bg-clip-text text-7xl font-black uppercase tracking-tighter text-transparent md:text-9xl lg:text-[12rem] leading-none">
+            <h1 className="bg-gradient-to-b from-white via-white to-white/20 bg-clip-text text-6xl font-black uppercase tracking-tighter text-transparent md:text-9xl lg:text-[12rem] leading-none">
               {hero.title}
             </h1>
             <div className="absolute -inset-2 bg-cyber-cyan/20 blur-3xl -z-10 rounded-full opacity-30" />
           </div>
 
-          <p className="max-w-2xl text-lg text-white/50 md:text-xl font-light leading-relaxed">
+          <p className="max-w-2xl text-base text-white/50 md:text-xl font-light leading-relaxed px-4">
             {hero.description}
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-6">
-            <Link href="/overview">
-              <Button variant="primary" size="lg" className="w-64 px-10 py-8 text-lg">
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 md:gap-6 w-full max-w-md md:max-w-none">
+            <Link href="/overview" className="w-full md:w-auto">
+              <Button variant="primary" size="lg" className="w-full md:w-64 px-10 py-6 md:py-8 text-base md:text-lg">
                 Enter Game
               </Button>
             </Link>
-            <Link href="/contract">
-              <Button variant="secondary" size="lg" className="w-64 px-10 py-8 text-lg">
+            <Link href="/contract" className="w-full md:w-auto">
+              <Button variant="secondary" size="lg" className="w-full md:w-64 px-10 py-6 md:py-8 text-base md:text-lg">
                 Smart Contract
               </Button>
             </Link>
@@ -69,12 +69,12 @@ export const HeroSection = () => {
       </div>
 
       {/* Bottom info */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40">
+      <div className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 md:gap-4 opacity-40">
         <span className="text-[10px] uppercase tracking-[0.3em] font-bold">Scroll to Explore</span>
         <motion.div 
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="h-12 w-[2px] bg-gradient-to-b from-cyber-cyan to-transparent" 
+          className="h-8 md:h-12 w-[2px] bg-gradient-to-b from-cyber-cyan to-transparent" 
         />
       </div>
     </section>

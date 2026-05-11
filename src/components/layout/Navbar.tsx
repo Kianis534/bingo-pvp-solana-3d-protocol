@@ -66,7 +66,7 @@ export const Navbar = () => {
 
         {/* Mobile Toggle */}
         <div className="lg:hidden flex items-center gap-4">
-          <SoundToggle />
+          <SoundToggle variant="navbar" />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="p-2 text-white/60 hover:text-white"
